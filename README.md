@@ -1,14 +1,14 @@
 # TASK 1
 ## SUBTASK 1
 10 punktów
-## SUBTASK 2
+## SUBTASK 3
 Cześć! Nazwyam się Kamila i zdecydowałam się wziąć udział w projekcie, ponieważ kilka miesięcy temu postanowiłam zostać testerem oprogramowania. Pomyślałam "jak nie teraz to kiedy?" i tak od kilku miesięcy testowanie to coś co wypełnia moje dni. Chcę być w tym najlepsza dlatego postanowiłam wybrać Wasz projekt dzięki, któremu z praktycznej strony poznam tajniki testowania. 
 
 Moim celem jest sprawdzenie swojej dotychczasowej wiedzy na temat testowania, nauka od strony praktycznej oraz oczywiście walka o staż :) 
 
 **Kamcia**
 
-## SUBTASK 3
+## SUBTASK 4
 **Na czym polega ta aplikacja? Do czego służy?**
 Aplikacja polega na zarządzaniu graczami i meczami. Służy do tworzenia profili graczy, tworzenia raportów. Dzięki niej możemy przeglądać wszelkie wskaźniki danych zawodników. Przydatna aplikacja dla tzw. skautów czyli łowców taletów piłki nożnej. 
 
