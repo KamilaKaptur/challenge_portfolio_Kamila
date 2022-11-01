@@ -37,7 +37,7 @@ Aby wejść w edycje raportu należy kliknąć na zawodnika, później pokaże s
 
 Podobnie jak poprzednie funkcjonalności dość "ukryta" funkcja. Na pierwszy rzut oka ciężko zrozumieć co jest jej celem oraz jak osługiwać tą funkcjonalność. Proponowałabym legende oraz krótki opis.
 
-*Pobieranie pliku CSV, drukowanie, zmiana języka na angielski, odznaczanie wyświetlania poszczególnych kolumn, opcja filtrowania wyników. 
+* Pozostałe: Pobieranie pliku CSV, drukowanie, zmiana języka na angielski, odznaczanie wyświetlania poszczególnych kolumn, opcja filtrowania wyników. 
 
 **Oceń interfejs aplikacji (wygląd) – czy Ci się podoba, czy nie?**
 
