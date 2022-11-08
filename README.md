@@ -81,7 +81,7 @@ Wykryte przeze mnie błędy:
 ***Why do we write test cases?***
 
 :pencil:
-I think that the main reason why test cases are written is to detail high-level scenarios/acceptance criteria and gather this knowledge in one place. They also often show what has been tested and whats not. They clearly document the different possibilities for testing various functionalities. Without them, we could get easly lost in the possibilities of testing one functionality in different ways. Moreover when we write test cases it becomes a very good source of information for new testers or other people from team. 
+I think that the main reason why test cases are written is to detail high-level scenarios/acceptance criteria and gather this knowledge in one place. They also often shows what has been tested and whats not. They clearly document the different possibilities for testing various functionalities. Without them, we could get easly lost in the possibilities of testing one functionality in different ways. Moreover when we write test cases it becomes a very good source of information for new testers or other people from team. 
 
 ## SUBTASK 4
 :star:[Pisanie przypadków testowych na podstawie "własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1Zuxfw_KGs6rtnvixjZ_BGlyF2Nt2vuYmqf_Vw028c3c/edit?usp=sharing):star:
