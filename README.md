@@ -86,5 +86,15 @@ I think that the main reason why test cases are written is to detail high-level 
 ## SUBTASK 4
 :star:[Pisanie przypadków testowych na podstawie "własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1Zuxfw_KGs6rtnvixjZ_BGlyF2Nt2vuYmqf_Vw028c3c/edit?usp=sharing):star:
 
+# TASK 3
+## SUBTASK 1
+:warning: [Bugs report form](https://docs.google.com/spreadsheets/d/1U8Bh0KyETTUE7Mf0jU0vUi0RGXZp-Rfft83FZrztyz4/edit?usp=sharing) :warning:
+## SUBTASK 2
+:white_check_mark: [Test Cases 1](https://docs.google.com/spreadsheets/d/1oNwOBzpA_U65f6R__Apm8b5xdBkZ41dkI4d_ylCyj5s/edit?usp=sharing) :white_check_mark:
+
+:white_check_mark: [Test Cases 2](https://docs.google.com/spreadsheets/d/1hRTYRFDygDu-V6alVXS_5JpHeRMnGfzrYfV8-87alJo/edit?usp=sharing) :white_check_mark:
+
+## SUBTASK 3
+:checkered_flag: [Test report](https://docs.google.com/document/d/19e_5jfqC2fR48f44x60p-4wym5GeEbW9btL3Yp3lHUk/edit?usp=sharing) :checkered_flag:
 
 
