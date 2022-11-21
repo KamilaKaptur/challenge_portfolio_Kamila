@@ -99,3 +99,8 @@ I think that the main reason why test cases are written is to detail high-level 
 
 ## SUBTASK 4
 :star: [Additional bugs](https://docs.google.com/document/d/19e_5jfqC2fR48f44x60p-4wym5GeEbW9btL3Yp3lHUk/edit?usp=sharing) :star:
+
+# TASK 4
+## SUBTASK 1 & 2
+
+
