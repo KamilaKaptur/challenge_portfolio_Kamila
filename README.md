@@ -102,5 +102,22 @@ I think that the main reason why test cases are written is to detail high-level 
 
 # TASK 4
 ## SUBTASK 1 & 2
+:warning: [Bugs report](https://docs.google.com/spreadsheets/d/15GFV-2Qd1r6kYMimifsJw11M3xIUZT5TVcpD5nC6VK4/edit?usp=sharing) :warning:
 
+## SUBTASK 3
 
+***What is this app for? What is the purpose of this app?***
+
+This application is used to work on your meditation, emotions and habits. The purpose of this app is to provide mostly audio content to the user. The user has content from experts all day long depending on preferences and needs. It is mainly focused on meditation, affirmations and relaxation techniques. From a business point of view, the purpose of the application is to convince as many users as possible to buy a paid subscription, thanks to which the user will get even more content.
+
+***Who is the end user of the app?***
+
+The end user of the app is a person who meditates or wants to start on an adventure with meditation and also with other mindfulness techniques.
+
+***Is the application user friendly in your opinion?***
+
+In my opinion, the application is user friendly. It is simple to use and eye-friendly. The main panel is easy to use and we are able to find what we need quickly.
+
+***How would you improve the application? What would you correct in it. Do you have any idea for additional functionality?***
+
+I would add more features in English to make it look the same as the Polish version. Also, it might be a good idea to add informational graphics with relaxation exercises so that the user can do them when he cannot listen to the audio.
