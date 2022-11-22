@@ -120,7 +120,7 @@ In my opinion, the application is user friendly. It is simple to use and eye-fri
 
 ***How would you improve the application? What would you correct in it. Do you have any idea for additional functionality?***
 
-I would add more features in English to make it look the same as the Polish version. Also, it might be a good idea to add informational graphics with relaxation exercises so that the user can do them when he cannot listen to the audio.
+I would add more features in English version to make it look the same as the Polish version. Also, it might be a good idea to add informational graphics with relaxation exercises so that the user can do them when cannot listen to the audio.
 
 ## SUBTASK 4
 
