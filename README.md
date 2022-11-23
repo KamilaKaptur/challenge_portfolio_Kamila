@@ -8,7 +8,7 @@
 
 Moim celem jest sprawdzenie swojej dotychczasowej wiedzy na temat testowania, nauka od strony praktycznej oraz oczywiście walka o staż :) 
 
-**Kamcia**
+
 
 ## SUBTASK 4
 **Na czym polega ta aplikacja? Do czego służy?**
