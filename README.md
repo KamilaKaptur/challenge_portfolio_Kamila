@@ -131,7 +131,7 @@ I would add more features in English version to make it look the same as the Pol
 # TASK 5
 ## SUBTASK 1
 
-Zapytania, które poznałam na kursie SQL in 120min:
+Zapytania, które poznałam na kursie SQL w 120min:
 
 SELECT
 
