@@ -169,9 +169,73 @@ JOIN
 
 ## SUBTASK 2&3
 
-1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
+:zap: **1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.** :zap:
 
 SELECT * FROM actors ORDER BY surname;
+
+![1](https://user-images.githubusercontent.com/111735785/204498245-8b5797ff-7192-44b3-8261-44333b72b5f9.png)
+
+:zap: **2. Wyświetl film, który powstał w 2019 roku.** :zap:
+
+SELECT * FROM movies WHERE year_of_production=2019;
+
+![2](https://user-images.githubusercontent.com/111735785/204502494-724a3e5f-e353-401d-afc6-f29872e37ebf.png)
+
+:zap: **3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.** :zap:
+
+SELECT * FROM movies WHERE year_of_production BETWEEN 1900 AND 1999;
+
+![3](https://user-images.githubusercontent.com/111735785/204503032-a169fa08-2e59-44f5-bf9a-6e8de21c31b0.png)
+
+:zap: **4.Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$** :zap:
+
+SELECT title, price FROM movies WHERE price <7;
+
+![4](https://user-images.githubusercontent.com/111735785/204503457-7b61881c-bac5-489e-9e72-90fdc527158d.png)
+
+:zap: **5.Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.** :zap:
+
+SELECT * FROM actors WHERE actor_id >=4 AND actor_id<=7;
+
+![5](https://user-images.githubusercontent.com/111735785/204503836-979023d7-f9c2-402f-9dbb-e3658a55e617.png)
+
+:zap: **6.Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.** :zap:
+
+SELECT * FROM customers WHERE customer_id=2 OR customer_id=4 OR customer_id=6;
+
+![6](https://user-images.githubusercontent.com/111735785/204504125-d909f914-bbd6-459a-a231-84aaab8d1ad1.png)
+
+:zap: **7.Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.** :zap:
+
+SELECT * FROM customers WHERE customer_id IN (1, 3, 5);
+
+![7](https://user-images.githubusercontent.com/111735785/204504557-2e1a5ed0-d8c5-43b2-bfd3-f38ca87be2fb.png)
+
+:zap: **8.Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.** :zap:
+
+SELECT * FROM actors WHERE name LIKE('An%');
+
+![8](https://user-images.githubusercontent.com/111735785/204504924-c95b0118-af3b-4e0d-9fac-9597b83899fb.png)
+
+:zap: **9.Wyświetl dane klienta, który nie ma podanego adresu email.** :zap:
+
+SELECT * FROM customers WHERE email IS NULL;
+
+![9](https://user-images.githubusercontent.com/111735785/204505160-7ababc78-3dff-4430-80e5-d6edbc1c615b.png)
+
+:zap: **10.Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.** :zap:
+
+SELECT * FROM movies WHERE movie_id BETWEEN 2 AND 8 AND price>9;
+
+![10](https://user-images.githubusercontent.com/111735785/204505460-21c74f29-c5f0-4d3c-a1b9-26d7f58e569e.png)
+
+
+
+
+
+
+
+
 
 
 
