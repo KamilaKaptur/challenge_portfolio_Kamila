@@ -128,4 +128,50 @@ I would add more features in English version to make it look the same as the Pol
 
 :star: [Jira Bugs Reports](https://fanfastic.atlassian.net/jira/software/projects/CPP/boards/5/backlog) :star:
 
+# TASK 5
+## SUBTASK 1
+
+Zapytania, które poznałam na kursie SQL in 120min:
+
+SELECT
+
+CREATE TABLE
+
+ORDER BY
+
+AS
+
+DESC/ASC
+
+WHERE
+
+LIKE
+
+BETWEEN
+
+AND
+
+OR
+
+IN
+
+GETDATE
+
+UPPER
+
+LOWER
+
+DATEDIFF
+
+GROUP BY
+
+JOIN
+
+## SUBTASK 2&3
+
+1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
+
+SELECT * FROM actors ORDER BY surname;
+
+
 
