@@ -225,7 +225,11 @@ SELECT * FROM customers WHERE email IS NULL;
 
 :zap: **10.Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.** :zap:
 
+``` sql
+
 SELECT * FROM movies WHERE movie_id BETWEEN 2 AND 8 AND price>9;
+
+```
 
 ![10](https://user-images.githubusercontent.com/111735785/204505460-21c74f29-c5f0-4d3c-a1b9-26d7f58e569e.png)
 
