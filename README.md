@@ -169,61 +169,61 @@ JOIN
 
 ## SUBTASK 2&3
 
-:zap: **1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.** :zap:
-
+:zap: **1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname./ Display the actors table in alphabetical order by sorting by the surname column.** :zap:
+``` sql
 SELECT * FROM actors ORDER BY surname;
-
+```
 ![1](https://user-images.githubusercontent.com/111735785/204498245-8b5797ff-7192-44b3-8261-44333b72b5f9.png)
 
-:zap: **2. Wyświetl film, który powstał w 2019 roku.** :zap:
-
+:zap: **2. Wyświetl film, który powstał w 2019 roku./Show which film was made in 2019.** :zap:
+``` sql
 SELECT * FROM movies WHERE year_of_production=2019;
-
+```
 ![2](https://user-images.githubusercontent.com/111735785/204502494-724a3e5f-e353-401d-afc6-f29872e37ebf.png)
 
-:zap: **3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.** :zap:
-
+:zap: **3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem./ Show all movies made between 1900 and 1999.** :zap:
+``` sql
 SELECT * FROM movies WHERE year_of_production BETWEEN 1900 AND 1999;
-
+```
 ![3](https://user-images.githubusercontent.com/111735785/204503032-a169fa08-2e59-44f5-bf9a-6e8de21c31b0.png)
 
-:zap: **4.Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$** :zap:
-
+:zap: **4.Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$/ Display ONLY the title and price of movies that cost less than $7** :zap:
+``` sql
 SELECT title, price FROM movies WHERE price <7;
-
+```
 ![4](https://user-images.githubusercontent.com/111735785/204503457-7b61881c-bac5-489e-9e72-90fdc527158d.png)
 
-:zap: **5.Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.** :zap:
-
+:zap: **5.Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN./ Use AND to display actors with actor_ids between 4-7 (4 and 7 should display). DO NOT USE BETWEEN operator.** :zap:
+``` sql
 SELECT * FROM actors WHERE actor_id >=4 AND actor_id<=7;
-
+```
 ![5](https://user-images.githubusercontent.com/111735785/204503836-979023d7-f9c2-402f-9dbb-e3658a55e617.png)
 
-:zap: **6.Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.** :zap:
-
+:zap: **6.Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny./Display customers with id 2,4,6 use logical condition for this.** :zap:
+``` sql
 SELECT * FROM customers WHERE customer_id=2 OR customer_id=4 OR customer_id=6;
-
+```
 ![6](https://user-images.githubusercontent.com/111735785/204504125-d909f914-bbd6-459a-a231-84aaab8d1ad1.png)
 
-:zap: **7.Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.** :zap:
-
+:zap: **7.Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN./Display clients with id 1,3,5 use IN operator for this.** :zap:
+``` sql
 SELECT * FROM customers WHERE customer_id IN (1, 3, 5);
-
+```
 ![7](https://user-images.githubusercontent.com/111735785/204504557-2e1a5ed0-d8c5-43b2-bfd3-f38ca87be2fb.png)
 
-:zap: **8.Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.** :zap:
-
+:zap: **8.Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”./Display the details of all persons in the 'actors' table whose name starts with 'An'.** :zap:
+``` sql
 SELECT * FROM actors WHERE name LIKE('An%');
-
+```
 ![8](https://user-images.githubusercontent.com/111735785/204504924-c95b0118-af3b-4e0d-9fac-9597b83899fb.png)
 
-:zap: **9.Wyświetl dane klienta, który nie ma podanego adresu email.** :zap:
-
+:zap: **9.Wyświetl dane klienta, który nie ma podanego adresu email./Display details of a customer who does not have an email address provided.** :zap:
+``` sql
 SELECT * FROM customers WHERE email IS NULL;
-
+```
 ![9](https://user-images.githubusercontent.com/111735785/204505160-7ababc78-3dff-4430-80e5-d6edbc1c615b.png)
 
-:zap: **10.Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.** :zap:
+:zap: **10.Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id./Show all movies priced over $9 and with an ID between 2 and 8 movie_id.** :zap:
 
 ``` sql
 
