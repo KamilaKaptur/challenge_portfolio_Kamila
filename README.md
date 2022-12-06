@@ -167,7 +167,7 @@ GROUP BY
 
 JOIN
 
-## SUBTASK 2&3
+## SUBTASK 2 & 1 FROM TASK 6
 
 :zap: **1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname./ Display the actors table in alphabetical order by sorting by the surname column.** :zap:
 ``` sql
@@ -329,7 +329,9 @@ VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
 ```
 <img width="305" alt="image" src="https://user-images.githubusercontent.com/111735785/205896938-7761dc92-e42d-433e-9916-d286d2126050.png">
 
+## SUBTASK 2
 
+* 11 pkt. 
 
 
 
