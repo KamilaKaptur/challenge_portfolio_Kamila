@@ -227,11 +227,110 @@ SELECT * FROM customers WHERE email IS NULL;
 
 ``` sql
 
-SELECT * FROM movies WHERE movie_id BETWEEN 2 AND 8 AND price>9;
+SELECT * FROM movies WHERE movie_id BETWEEN 2 AND 8 AND price > 9;
 
 ```
 
 ![10](https://user-images.githubusercontent.com/111735785/204505460-21c74f29-c5f0-4d3c-a1b9-26d7f58e569e.png)
+
+:zap: **11.Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd./I made a mistake typing the name of Ani Miler - I typed Muler. Find and use a function that will correct my breakneck mistake.** :zap:
+
+``` sql
+
+UPDATE customers SET surname = 'Miler' 
+WHERE customer_id IN (SELECT customer_id FROM customers WHERE surname='muler' AND name='Ania');
+
+```
+<img width="286" alt="image" src="https://user-images.githubusercontent.com/111735785/205890289-89ae5eab-6117-4de8-9c36-22bc8fdf377f.png">
+
+:zap: **12.Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej./I charged too much money from a customer who recently bought a movie with id 4. Using use the join function to check the client's name and email address. In order to write him a message about the mistake of a fantastic boss.** :zap:
+
+``` sql
+
+SELECT name, email FROM customers INNER JOIN sale ON customers.customer_id = sale.customer_id WHERE movie_id = ‚4’
+
+```
+<img width="168" alt="image" src="https://user-images.githubusercontent.com/111735785/205891858-1b3e9c86-d818-4111-8f47-b1988ba731b3.png">
+
+:zap: **13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com/Surely you noticed that the seller forgot to enter the e-mail address of client Patrycja. Complete this gap by typing: pati@mail.com** :zap:
+
+``` sql
+
+UPDATE customers SET email = 'pati@mail.com' WHERE name = 'Patrycja';
+
+```
+<img width="276" alt="image" src="https://user-images.githubusercontent.com/111735785/205892797-aad5c920-69cb-4e67-8c79-11837df6af98.png">
+
+:zap: **14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia)./For each purchase, display the name of the customer who made the rental and the title of the rented movie. (use the inner join function for this, think beforehand which tables will be useful for you to perform the exercise).** :zap:
+
+``` sql
+
+SELECT customers.name, customers.surname, movies.title 
+FROM customers 
+JOIN sale ON sale.customer_id = customers.customer_id 
+JOIN movies ON movies.movie_id = sale.movie_id;
+
+```
+<img width="247" alt="image" src="https://user-images.githubusercontent.com/111735785/205894002-502232e2-31f8-4ae4-989c-c87db8ebe8df.png">
+
+:zap: **15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag/In order to anonymise data, you want to create pseudonyms for your clients. - Add a column named 'pseudonym' to the customer table, - Fill in the column so that the nickname is made up of the first two letters of the first name and the last letter of the last name. E.g. Natalie Pilling → Nag** :zap:
+
+``` sql
+
+ALTER TABLE customers ADD pseudonym varchar(3);
+
+UPDATE customers SET pseudonym = CONCAT(LEFT(name, 2), RIGHT(surname, 1));
+
+```
+<img width="233" alt="image" src="https://user-images.githubusercontent.com/111735785/205894784-f41d2d96-09fd-4b9c-9533-1490b99cab6c.png">
+
+:zap: **16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały./Display the titles of the movies that have been purchased, display the table in such a way that the titles do not repeat.** :zap:
+
+``` sql
+
+SELECT DISTINCT movies.title FROM movies INNER JOIN sale ON sale.movie_id = movies.movie_id;
+
+```
+<img width="148" alt="image" src="https://user-images.githubusercontent.com/111735785/205895244-4104a720-c610-4bd8-92a2-e1f841509c98.png">
+
+:zap: **17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)/Display a common list of the names of all actors and clients, and sort the result alphabetically. (Use the UNION function for this)** :zap:
+
+``` sql
+SELECT name FROM actors 
+UNION 
+SELECT name FROM customers ORDER BY name ASC;
+
+```
+<img width="54" alt="image" src="https://user-images.githubusercontent.com/111735785/205895753-438de818-660a-446b-9884-35edd7779943.png">
+
+:zap: **18. Inflation has taken over Poland and our movie shop has also suffered from this problem. Increase the price of all movies made after 2000 by $2.50 (Remember that the dollar is the default unit - don't use it anywhere).** :zap:
+
+``` sql
+UPDATE movies SET price = price + 2.5 WHERE year_of_production > 2000;
+```
+![image](https://user-images.githubusercontent.com/111735785/205896118-aa64c48b-172e-4808-9a1b-f8967f039743.png)
+
+:zap: **19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał/Display the name of the actor with id 4 and the title of the movie he starred in** :zap
+
+``` sql
+SELECT actors.name, actors.surname, movies.title, actors.actor_id 
+FROM actors 
+INNER JOIN cast ON actors.actor_id = cast.actor_id 
+INNER JOIN movies ON movies.movie_id = cast.movie_id 
+WHERE actors.actor_id = ‚4';
+```
+<img width="226" alt="image" src="https://user-images.githubusercontent.com/111735785/205896590-04f5bcb9-72f5-4f20-98b8-8bba44d9d318.png">
+
+:zap: **20.A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa/And where is our HONIA!? Add a new tuple to the customers table, where customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com and pseudonym = Hoa** :zap:
+
+``` sql
+INSERT INTO customers (customer_id, name, surname, email, pseudonym) 
+VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+```
+<img width="305" alt="image" src="https://user-images.githubusercontent.com/111735785/205896938-7761dc92-e42d-433e-9916-d286d2126050.png">
+
+
+
 
 
 
