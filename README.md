@@ -247,7 +247,9 @@ WHERE customer_id IN (SELECT customer_id FROM customers WHERE surname='m
 
 ``` sql
 
-SELECT name, email FROM customers INNER JOIN sale ON customers.customer_id = sale.customer_id WHERE movie_id = ‚4’
+SELECT customers.name, customers.email FROM customers 
+INNER JOIN sale ON customers.customer_id = sale.customer_id 
+WHERE movie_id = ‚4’;
 
 ```
 <img width="168" alt="image" src="https://user-images.githubusercontent.com/111735785/205891858-1b3e9c86-d818-4111-8f47-b1988ba731b3.png">
